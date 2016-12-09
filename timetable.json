@@ -1,0 +1,9 @@
+[
+  {"time": "13:00 - 13:10", "contents": "Opening"},
+  {"time": "13:10 - 15:00", "contents": "Recreation(Like HandsOn)"},
+  {"time": "15:10 - 15:20", "contents": "休憩"},
+  {"time": "15:20 - 16:00", "contents": "交流TIME"},
+  {"time": "16:00 - 17:30", "contents": "LT(飛び入り含む)"},
+  {"time": "17:30 - 17:50", "contents": "Closing"},
+  {"time": "17:50 - ", "contents": "To be continued... ?"}
+]

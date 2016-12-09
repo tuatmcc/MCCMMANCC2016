@@ -1,0 +1,96 @@
+<% var
+pageTitle = "Welcome";
+pageId = "index";
+pageUrl = "";
+pageDescription = siteDescription;
+%>
+<% include _header %>
+
+<header class="l-header l-section">
+  <div class="l-container">
+    <div class="header-content">
+      <h1><%= siteName %></h1>
+      <h2><%= siteDescription %></h2>
+
+      <a class="btn btn-large" href=""><span>参加申し込み</span></a>
+      <a class="btn btn-large" href="https://twitter.com/hashtag/MCCMMANCC?f=tweets&src=hash"><span><i class="fa fa-twitter"></i> #MCCMMANCC</span></a>
+
+  </div>
+</div>
+</header>
+
+<div class="l-container">
+  <div class="l-row">
+    <div class="l-span12">
+      <h2 style="text-align: center;">What's this?</h2>
+      <p>
+        名前が似ていてややこしい三大サークルMCC・MMA・NCCの交流会の開催が遂に決定しました！
+        本イベントではLTイベントと体を使った楽しいレクリエーションの２つを通してサークル間の交流を深めようというイベントです。
+        普段交流する機会は少ないと思いますので是非この機会に交流の輪を広げましょう！
+      </p>
+    </div>
+  </div>
+  <div class="l-row">
+    <div class="l-span6">
+      <h2>Information</h2>
+      <ul>
+        <li>開催日時: 2016/12/17() 13:00-18:00</li>
+        <ul>
+          <li>閉会後は懇親会・・・？</li>
+        </ul>
+        <li>会場: 明治大学 中野キャンパス ${detail}</li>
+        <li>参加対象: MCC・MMA・NCCのいずれかに所属している学生</li>
+      </ul>
+    </div>
+    <div class="l-span6">
+      <h2>What's LT?</h2>
+      <p>
+        <blockquote cite="https://atnd.org/events/70881">
+          LT（ライトニングトーク）とは、５分程度で行われるプレゼンテーションのことです。Dentoo.LTでは1人10分の枠になります。発表テーマは自由。おいしい麦茶の入れ方からちょっとマニアックなEjectコマンドの使い方まで何でも発表してください。
+        </blockquote>
+        quoted from <a href="" target="_blank">Dentoo.LT #15.5</a> <br>
+        ※本イベントも10分予定です。お気軽に発表してください。
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="l-container">
+  <div class="l-row">
+    <div class="l-span6">
+      <h2>TimeTable</h2>
+      <table>
+        <tr>
+            <th>Time</th><th>Contents</th>
+        </tr>
+
+        <% for(var i = 0; i < timetable.length; i++) { %>
+        <tr>
+          <td><%= timetable[i].time %></td>
+          <td><%= timetable[i].contents %></td>
+        </tr>
+        <% }; %>
+      </table>
+    </div>
+
+    <div class="l-span6">
+      <h2>LT actor</h2>
+      <table>
+        <tr>
+            <th>Order</th><th>Speaker</th><th>Circle</th><th>Title</th>
+        </tr>
+
+        <% for(var i = 0; i < talks.length; i++) { %>
+        <tr>
+          <td>?</td>
+          <td><%= talks[i].speaker %></td>
+          <td><%= talks[i].from %></td>
+          <td><%= talks[i].title %></td>
+        </tr>
+        <% }; %>
+      </table>
+    </div>
+  </div>
+</div>
+
+<% include _footer %>

@@ -1,0 +1,10 @@
+table {
+  width: 90%;
+  margin: 16px auto;
+  border: 2px $table-border-outline solid;
+
+  td, th {
+    padding: 16px;
+    border: 1px $table-border-inner solid;
+  }
+}

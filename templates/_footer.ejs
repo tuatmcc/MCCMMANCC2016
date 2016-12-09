@@ -1,0 +1,23 @@
+  <footer class="l-footer l-section">
+      <div class="social-buttons">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= siteRootUrl %>" data-hashtags="<%= hashTag %>">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+      <p><em>Supported by <a href="<%= supporterUrl %>"><%= supporter %></a></em></p>
+      <p><em>Extends <a href="http://nakano-lt.github.io/004/">nakano-lt/004</a> powered by <a href="https://github.com/sanographix/rin">Rin4</a></em></p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="build/js/scripts.js"></script>
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@import "../node_modules/material-colors/dist/colors.scss";
+@import "lib/normalize";
+@import "lib/variable";
+@import "lib/button";
+@import "lib/common";
+@import "lib/grid";
+@import "lib/core";
+@import "lib/globalheader";
+@import "lib/fonts";
+@import "lib/table";
+
+body {
+    font-family: 'mplus-1c-medium', 'Helvetica Neue', Helvetica, Arial, Verdana, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: normal;
+    margin: 0;
+}
+
+.l-header {
+  text-align: center;
+  background-color: $link;
+  color: $md-red-600;
+  padding: 3em 0;
+
+  h1 {
+    font-family: mplus-1c-thin;
+    font-size: 700%;
+    margin: .5em 0 .3em;
+
+    @media #{$mq-sm} {
+      margin: 0px;
+      font-size: 400%;
+    }
+  }
+
+  .btn {
+    color: $bg;
+    border-color: $bg;
+    margin: 0 10px;
+
+    @media #{$mq-sm} {
+      margin-top: 16px;
+    }
+  }
+  span {
+    font-family: mplus-1c-medium;
+  }
+}
+
+h2 {
+  font-family: mplus-1c-light;
+  font-size: 200%;
+
+  @media #{$mq-sm} {
+    font-size: 150%;
+  }
+}
+
+.l-footer {
+  padding: 1px;
+  margin: 32px 0;
+  text-align: center;
+}
+
+.header-content {
+  margin: 4em 0 2em;
+
+  @media #{$mq-sm} {
+    margin: 0;
+  }
+}
