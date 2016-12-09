@@ -1,4 +1,4 @@
-Site URL: http://microcomputerclub.github.io/MCCMMANCC/
+Site URL: http://microcomputerclub.github.io/MCCMMANCC2016/
 
 Extended by [nakano-lt/004](https://github.com/nakano-lt/004)
 Powered by [Rin 4](http://sanographix.github.io/rin/)
